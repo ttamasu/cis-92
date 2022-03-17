@@ -8,7 +8,7 @@ COPY app/mysite/ /app
 ENV DJANGO_ADMIN_EMAIL=admn@example.com
 ENV DJANGO_ADMIN_USERNAME=admn
 ENV DJANGO_SUPERUSER_PASSWORD=admn
-
+RUN  mkdir /db/
 WORKDIR /app
 
 ENTRYPOINT ["/bin/bash"]
